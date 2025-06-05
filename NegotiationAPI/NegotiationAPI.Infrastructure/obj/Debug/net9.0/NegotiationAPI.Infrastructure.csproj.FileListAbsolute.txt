@@ -1,0 +1,12 @@
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Infrastructure.deps.json
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Infrastructure.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Infrastructure.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.AssemblyInfoInputs.cache
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.AssemblyInfo.cs
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.csproj.CoreCompileInputs.cache
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.sourcelink.json
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\refint\NegotiationAPI.Infrastructure.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\ref\NegotiationAPI.Infrastructure.dll

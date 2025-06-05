@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Authentication\" />
+    <Folder Include="Services\" />
+    <Folder Include="Persistance\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NegotiationAPI.Application\NegotiationAPI.Application.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegotiationAPI.Api", "NegotiationAPI.Api\NegotiationAPI.Api.csproj", "{F8F19D5F-B255-4815-9901-46557ACD0D9A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{029932AC-0EC1-407A-A55B-574BB2C3E26D} = {029932AC-0EC1-407A-A55B-574BB2C3E26D}
+		{44374A42-DC4F-4A60-8915-1E570F5A5644} = {44374A42-DC4F-4A60-8915-1E570F5A5644}
+		{61045A4C-38B0-4074-AC35-D19200654C80} = {61045A4C-38B0-4074-AC35-D19200654C80}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegotiationAPI.Domain", "NegotiationAPI.Domain\NegotiationAPI.Domain.csproj", "{A8B951BA-3CDD-49E9-A4BC-62078CED514F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegotiationAPI.Application", "NegotiationAPI.Application\NegotiationAPI.Application.csproj", "{44374A42-DC4F-4A60-8915-1E570F5A5644}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8B951BA-3CDD-49E9-A4BC-62078CED514F} = {A8B951BA-3CDD-49E9-A4BC-62078CED514F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegotiationAPI.Infrastructure", "NegotiationAPI.Infrastructure\NegotiationAPI.Infrastructure.csproj", "{029932AC-0EC1-407A-A55B-574BB2C3E26D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44374A42-DC4F-4A60-8915-1E570F5A5644} = {44374A42-DC4F-4A60-8915-1E570F5A5644}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegotiationAPI.Contracts", "NegotiationAPI.Contracts\NegotiationAPI.Contracts.csproj", "{61045A4C-38B0-4074-AC35-D19200654C80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8F19D5F-B255-4815-9901-46557ACD0D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F19D5F-B255-4815-9901-46557ACD0D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F19D5F-B255-4815-9901-46557ACD0D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F19D5F-B255-4815-9901-46557ACD0D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B951BA-3CDD-49E9-A4BC-62078CED514F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B951BA-3CDD-49E9-A4BC-62078CED514F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B951BA-3CDD-49E9-A4BC-62078CED514F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B951BA-3CDD-49E9-A4BC-62078CED514F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44374A42-DC4F-4A60-8915-1E570F5A5644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44374A42-DC4F-4A60-8915-1E570F5A5644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44374A42-DC4F-4A60-8915-1E570F5A5644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44374A42-DC4F-4A60-8915-1E570F5A5644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029932AC-0EC1-407A-A55B-574BB2C3E26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029932AC-0EC1-407A-A55B-574BB2C3E26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029932AC-0EC1-407A-A55B-574BB2C3E26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029932AC-0EC1-407A-A55B-574BB2C3E26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61045A4C-38B0-4074-AC35-D19200654C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61045A4C-38B0-4074-AC35-D19200654C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61045A4C-38B0-4074-AC35-D19200654C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61045A4C-38B0-4074-AC35-D19200654C80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE3CFFC7-561E-469C-983A-88AAEABC9BB7}
+	EndGlobalSection
+EndGlobal

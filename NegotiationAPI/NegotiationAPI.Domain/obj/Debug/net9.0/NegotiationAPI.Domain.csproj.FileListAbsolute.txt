@@ -1,0 +1,12 @@
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\bin\Debug\net9.0\NegotiationAPI.Domain.deps.json
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\bin\Debug\net9.0\NegotiationAPI.Domain.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\bin\Debug\net9.0\NegotiationAPI.Domain.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.AssemblyInfoInputs.cache
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.AssemblyInfo.cs
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.csproj.CoreCompileInputs.cache
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.sourcelink.json
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\refint\NegotiationAPI.Domain.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\ref\NegotiationAPI.Domain.dll
