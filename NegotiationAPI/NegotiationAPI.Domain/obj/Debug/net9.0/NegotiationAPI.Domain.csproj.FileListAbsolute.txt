@@ -10,3 +10,4 @@ H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\refint\NegotiationAPI.Domain.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.pdb
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\ref\NegotiationAPI.Domain.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Domain\obj\Debug\net9.0\NegotiationAPI.Domain.csproj.AssemblyReference.cache

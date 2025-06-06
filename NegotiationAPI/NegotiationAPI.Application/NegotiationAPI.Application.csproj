@@ -7,14 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Authentication\Commands\" />
-    <Folder Include="Authentication\Queries\" />
-    <Folder Include="Common\Behaviors\" />
-    <Folder Include="Common\Interfaces\" />
-    <Folder Include="Services\Authentication\" />
+    <Folder Include="Common\Behaviors\ValidationBehaviors\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
   </ItemGroup>
 

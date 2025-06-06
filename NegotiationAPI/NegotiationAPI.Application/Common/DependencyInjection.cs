@@ -11,6 +11,7 @@ namespace NegotiationAPI.Application.Common
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
+            services.AddMediatR(new MediatRServiceConfiguration().RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
 
             return services;
         }

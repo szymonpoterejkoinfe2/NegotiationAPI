@@ -10,3 +10,9 @@ H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\ob
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\refint\NegotiationAPI.Infrastructure.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.pdb
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\ref\NegotiationAPI.Infrastructure.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\NegotiationAPI.Infrastructure.csproj.AssemblyReference.cache
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Application.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Domain.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Application.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\bin\Debug\net9.0\NegotiationAPI.Domain.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Infrastructure\obj\Debug\net9.0\Negotiat.7683BE4A.Up2Date

@@ -4,9 +4,12 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3f6c0a76-c618-4d29-85c4-12fc4b8aaea0</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.4" />
   </ItemGroup>
@@ -14,8 +17,6 @@
   <ItemGroup>
     <Folder Include="Common\Errors\" />
     <Folder Include="Common\Http\" />
-    <Folder Include="Common\Mappings\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>

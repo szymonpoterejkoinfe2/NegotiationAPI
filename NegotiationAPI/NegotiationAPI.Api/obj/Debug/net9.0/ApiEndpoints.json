@@ -1,23 +1,34 @@
 [
   {
-    "ContainingType": "NegotiationAPI.Api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "NegotiationAPI.Api.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "Authentication/login",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NegotiationAPI.Api.WeatherForecast, NegotiationAPI.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "request",
+        "Type": "NegotiationAPI.Contracts.Authentication.LoginRequest",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "Authentication/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NegotiationAPI.Contracts.Authentication.RegistrationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

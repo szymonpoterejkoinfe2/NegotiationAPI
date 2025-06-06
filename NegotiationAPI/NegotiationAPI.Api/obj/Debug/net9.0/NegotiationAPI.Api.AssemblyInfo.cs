@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("3f6c0a76-c618-4d29-85c4-12fc4b8aaea0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("NegotiationAPI.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aee9edcb270cd3802053a6d850bfe7268d55ae1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76dedc7419d7881d7098cd717ca3615f0f95fede")]
 [assembly: System.Reflection.AssemblyProductAttribute("NegotiationAPI.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NegotiationAPI.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
