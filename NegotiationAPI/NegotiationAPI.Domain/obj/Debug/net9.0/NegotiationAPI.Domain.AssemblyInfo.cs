@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NegotiationAPI.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76dedc7419d7881d7098cd717ca3615f0f95fede")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce3fdbbd14f1ca060b79978bc0cc14eb558a91c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("NegotiationAPI.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NegotiationAPI.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
