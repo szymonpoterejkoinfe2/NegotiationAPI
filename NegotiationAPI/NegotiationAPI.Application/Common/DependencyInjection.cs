@@ -1,9 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using NegotiationAPI.Application.Common.Behaviors.ValidationBehaviors;
+using System.Reflection;
 
 namespace NegotiationAPI.Application.Common
 {
@@ -12,6 +11,10 @@ namespace NegotiationAPI.Application.Common
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddMediatR(new MediatRServiceConfiguration().RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
+
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             return services;
         }
