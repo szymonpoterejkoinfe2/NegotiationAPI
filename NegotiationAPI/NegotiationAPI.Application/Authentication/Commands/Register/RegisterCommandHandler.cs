@@ -1,8 +1,10 @@
-﻿using MediatR;
+﻿using ErrorOr;
+using MediatR;
 using NegotiationAPI.Application.Common.Interfaces.Authentication;
 using NegotiationAPI.Application.Common.Interfaces.Persistance;
 using NegotiationAPI.Application.Services.Authentication;
 using NegotiationAPI.Domain.Entities;
+using NegotiationAPI.Domain.Errors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace NegotiationAPI.Application.Authentication.Commands.Register
 {
-    public class RegisterCommandHandler : IRequestHandler<RegisterCommand, AuthenticationResult>
+    public class RegisterCommandHandler : IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
     {
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
         private readonly IEmployeeRepository _employeeRepository;
@@ -23,12 +25,12 @@ namespace NegotiationAPI.Application.Authentication.Commands.Register
             _jwtTokenGenerator = jwtTokenGenerator;
         }
 
-        public async Task<AuthenticationResult> Handle(RegisterCommand command, CancellationToken cancellationToken)
+        public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command, CancellationToken cancellationToken)
         {
 
             if (_employeeRepository.GetEmployeeByEmail(command.Email) is not null)
             {
-                throw new Exception("Employee not found");
+                return Errors.Authentication.DuplicateEmail;
             }
 
             var employee = new Employee()

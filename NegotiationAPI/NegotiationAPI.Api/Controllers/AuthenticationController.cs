@@ -1,20 +1,20 @@
-﻿using MapsterMapper;
+﻿using ErrorOr;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
 using NegotiationAPI.Application.Authentication.Commands.Register;
 using NegotiationAPI.Application.Authentication.Queries.Login;
 using NegotiationAPI.Application.Services.Authentication;
 using NegotiationAPI.Contracts.Authentication;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using NegotiationAPI.Domain.Errors;
 
 namespace NegotiationAPI.Api.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
+
+    [Route("[controller]/")]
     [AllowAnonymous]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
         private readonly ISender _mediator;
         private readonly IMapper _mapper;
@@ -30,10 +30,12 @@ namespace NegotiationAPI.Api.Controllers
         {
                
             var command = _mapper.Map<RegisterCommand>(request);
-            AuthenticationResult authResult = await _mediator.Send(command);
+            ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
-            return Ok(_mapper.Map<AuthenticationResponse>(authResult));
-               
+            return authResult.Match(
+               authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
+               errors => Problem(errors)
+               ); ;
         }
 
         [Route("login")]
@@ -41,9 +43,17 @@ namespace NegotiationAPI.Api.Controllers
         public async Task<IActionResult> Login([FromBody]LoginRequest request)
         {
             var query = _mapper.Map<LoginQuery>(request);
-            AuthenticationResult authResult = await _mediator.Send(query);
+            ErrorOr<AuthenticationResult> authResult = await _mediator.Send(query);
 
-            return Ok(_mapper.Map<AuthenticationResponse>(authResult));
+            if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+            {
+                return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);
+            }
+
+            return authResult.Match(
+                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
+                errors => Problem(errors)
+                );
         }
 
     }

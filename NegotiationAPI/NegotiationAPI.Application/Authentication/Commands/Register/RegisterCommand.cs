@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using ErrorOr;
+using MediatR;
 using NegotiationAPI.Application.Services.Authentication;
 
 namespace NegotiationAPI.Application.Authentication.Commands.Register
@@ -10,5 +11,5 @@ namespace NegotiationAPI.Application.Authentication.Commands.Register
         string Email,
         string Phone,
         string Password
-        ) : IRequest<AuthenticationResult>;
+        ) : IRequest<ErrorOr<AuthenticationResult>>;
 }

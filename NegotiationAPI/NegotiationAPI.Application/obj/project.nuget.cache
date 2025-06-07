@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N9F2REdg1eo=",
+  "dgSpecHash": "1VvygwGgy7M=",
   "success": true,
   "projectFilePath": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\NegotiationAPI.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Szymon\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\Szymon\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\Szymon\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\Szymon\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using NegotiationAPI.Application.Common.Interfaces.Authentication;
 using NegotiationAPI.Application.Common.Interfaces.Persistance;

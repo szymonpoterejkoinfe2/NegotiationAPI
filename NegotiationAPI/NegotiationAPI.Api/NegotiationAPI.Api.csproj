@@ -15,11 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Errors\" />
-    <Folder Include="Common\Http\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\NegotiationAPI.Application\NegotiationAPI.Application.csproj" />
     <ProjectReference Include="..\NegotiationAPI.Contracts\NegotiationAPI.Contracts.csproj" />
     <ProjectReference Include="..\NegotiationAPI.Infrastructure\NegotiationAPI.Infrastructure.csproj" />

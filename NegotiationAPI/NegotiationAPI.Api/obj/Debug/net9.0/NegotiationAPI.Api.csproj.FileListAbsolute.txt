@@ -53,3 +53,6 @@ H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\Mapster.DependencyInjection.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\MediatR.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\MediatR.Contracts.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\ErrorOr.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\FluentValidation.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

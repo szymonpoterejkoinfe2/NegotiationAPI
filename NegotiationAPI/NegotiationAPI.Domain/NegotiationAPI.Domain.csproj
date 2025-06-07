@@ -8,10 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Errors\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="2.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
   </ItemGroup>
 
