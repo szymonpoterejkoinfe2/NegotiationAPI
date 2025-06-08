@@ -1,6 +1,7 @@
 ﻿using MapsterMapper;
 using NegotiationAPI.Application.Common.Interfaces.Persistance;
 using NegotiationAPI.Domain.Entities;
+using NegotiationAPI.Infrastructure.Persistance.Entities;
 
 namespace NegotiationAPI.Infrastructure.Persistance.Repos
 {
@@ -10,14 +11,14 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
         {
             new ProductEntity
         {
-            Id = Guid.NewGuid(),
+            Id = Guid.Parse("11111111-1111-1111-1111-111111111111"),
             Name = "Laptop Lenovo ThinkPad X1",
             Price = 5499.99,
             Description = "Biznesowy laptop z procesorem Intel i7, 16GB RAM i dyskiem SSD 512GB."
         },
             new ProductEntity
         {
-            Id = Guid.NewGuid(),
+            Id = Guid.Parse("22222222-2222-2222-2222-222222222222"),
             Name = "Smartfon Samsung Galaxy S24",
             Price = 3899.00,
             Description = "Nowoczesny smartfon z ekranem AMOLED 6.8\" i aparatem 108MP."

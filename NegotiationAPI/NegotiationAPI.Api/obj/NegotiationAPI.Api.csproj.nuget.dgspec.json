@@ -218,7 +218,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Domain\\NegotiationAPI.Domain.csproj": {
+                "projectPath": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Domain\\NegotiationAPI.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

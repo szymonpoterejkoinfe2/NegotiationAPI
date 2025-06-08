@@ -42,9 +42,98 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationController",
+    "Method": "GetAllNegotiations",
+    "RelativePath": "Negotiation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationController",
+    "Method": "AddNegotiation",
+    "RelativePath": "Negotiation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationController",
+    "Method": "GetNegotiationById",
+    "RelativePath": "Negotiation/{negotiationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "negotiationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationController",
+    "Method": "DeleteNegotiation",
+    "RelativePath": "Negotiation/{negotiationId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "negotiationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationController",
+    "Method": "ChangeNegotiationStatus",
+    "RelativePath": "Negotiation/{negotiationId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "negotiationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "NegotiationAPI.Contracts.Negotiation.ChangeNegotiationStateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
+    "Method": "GetAllProducts",
+    "RelativePath": "Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
     "Method": "AddProduct",
-    "RelativePath": "Product/AddProduct",
+    "RelativePath": "Product",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -59,8 +148,24 @@
   },
   {
     "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "Product/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
     "Method": "DeleteProduct",
-    "RelativePath": "Product/DeleteProduct",
+    "RelativePath": "Product/{productId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -68,33 +173,7 @@
       {
         "Name": "productId",
         "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
-    "Method": "GetAllProducts",
-    "RelativePath": "Product/GetAllProducts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
-    "Method": "GetProductById",
-    "RelativePath": "Product/GetProdyctById",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "productId",
-        "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NegotiationAPI.Infrastructure.Persistance
+namespace NegotiationAPI.Infrastructure.Persistance.Entities
 {
     public class ProductEntity
     {

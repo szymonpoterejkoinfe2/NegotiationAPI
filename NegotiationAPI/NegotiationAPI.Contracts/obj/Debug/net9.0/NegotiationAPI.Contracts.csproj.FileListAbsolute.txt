@@ -10,3 +10,7 @@ H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\obj\Deb
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\obj\Debug\net9.0\refint\NegotiationAPI.Contracts.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\obj\Debug\net9.0\NegotiationAPI.Contracts.pdb
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\obj\Debug\net9.0\ref\NegotiationAPI.Contracts.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\bin\Debug\net9.0\NegotiationAPI.Domain.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\bin\Debug\net9.0\NegotiationAPI.Domain.pdb
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\obj\Debug\net9.0\NegotiationAPI.Contracts.csproj.AssemblyReference.cache
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Contracts\obj\Debug\net9.0\Negotiat.68F6466C.Up2Date

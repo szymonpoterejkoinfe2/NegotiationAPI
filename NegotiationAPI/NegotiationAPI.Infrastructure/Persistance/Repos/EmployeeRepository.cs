@@ -1,6 +1,7 @@
 ﻿using MapsterMapper;
 using NegotiationAPI.Application.Common.Interfaces.Persistance;
 using NegotiationAPI.Domain.Entities;
+using NegotiationAPI.Infrastructure.Persistance.Entities;
 
 namespace NegotiationAPI.Infrastructure.Persistance.Repos
 {
