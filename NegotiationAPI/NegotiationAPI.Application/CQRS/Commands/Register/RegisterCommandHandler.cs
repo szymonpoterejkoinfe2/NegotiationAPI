@@ -5,12 +5,6 @@ using NegotiationAPI.Application.Common.Interfaces.Persistance;
 using NegotiationAPI.Application.Services.Authentication;
 using NegotiationAPI.Domain.Entities;
 using NegotiationAPI.Domain.Errors;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace NegotiationAPI.Application.Authentication.Commands.Register
 {

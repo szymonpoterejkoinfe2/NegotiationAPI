@@ -35,7 +35,7 @@ namespace NegotiationAPI.Api.Controllers
             return authResult.Match(
                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
                errors => Problem(errors)
-               ); ;
+               );
         }
 
         [Route("login")]
