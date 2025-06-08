@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NegotiationAPI.Domain\NegotiationAPI.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

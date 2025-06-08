@@ -275,6 +275,9 @@
         }
       },
       "NegotiationAPI.Contracts/1.0.0": {
+        "dependencies": {
+          "NegotiationAPI.Domain": "1.0.0"
+        },
         "runtime": {
           "NegotiationAPI.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",

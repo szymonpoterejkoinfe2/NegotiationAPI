@@ -24,8 +24,7 @@ namespace NegotiationAPI.Api.Controllers
             _mediator = mediator;
         }
         [AllowAnonymous]
-        [Route("GetAllProducts")]
-        [HttpGet]
+        [HttpGet()]
         public async Task<IActionResult> GetAllProducts()
         {
             var query = new GetAllProductsQuery();
@@ -38,8 +37,7 @@ namespace NegotiationAPI.Api.Controllers
 
         }
         [AllowAnonymous]
-        [Route("GetProdyctById")]
-        [HttpGet]
+        [HttpGet("{productId}")]
         public async Task<IActionResult> GetProductById(Guid productId)
         {
             var query = new GetProductByIdQuery(Id: productId);
@@ -51,7 +49,7 @@ namespace NegotiationAPI.Api.Controllers
                ); 
         }
 
-        [Route("AddProduct")]
+
         [HttpPost]
         public async Task<IActionResult> AddProduct([FromBody] AddProductRequest request)
         {
@@ -64,8 +62,7 @@ namespace NegotiationAPI.Api.Controllers
             ); 
         }
 
-        [Route("DeleteProduct")]
-        [HttpDelete]
+        [HttpDelete("{productId}")]
         [AllowAnonymous]
         public async Task<IActionResult> DeleteProduct(Guid productId)
         {
