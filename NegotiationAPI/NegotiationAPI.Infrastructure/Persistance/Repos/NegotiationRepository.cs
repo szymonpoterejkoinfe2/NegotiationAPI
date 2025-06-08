@@ -26,12 +26,14 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
                 {
                     new NegotiationAttemptEntity
                     {
+                        Id = Guid.Parse("11111111-1111-1111-1111-111111111111"),
                         ProposedPrice = 150,
                         ProposedAt = DateTime.UtcNow.AddDays(-1),
                         Result = NegotiationResult.Rejected
                     },
                     new NegotiationAttemptEntity
                     {
+                        Id = Guid.Parse("22222222-2222-2222-2222-222222222222"),
                         ProposedPrice = 170,
                         ProposedAt = DateTime.UtcNow.AddHours(-20),
                         Result = NegotiationResult.Rejected
@@ -49,6 +51,7 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
                 {
                     new NegotiationAttemptEntity
                     {
+                        Id = Guid.Parse("32222222-3333-2222-2222-222222222222"),
                         ProposedPrice = 250,
                         ProposedAt = DateTime.UtcNow.AddDays(-2),
                         Result = NegotiationResult.Accepted

@@ -18,6 +18,7 @@ namespace NegotiationAPI.Infrastructure.Common
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<INegotiationRepository, NegotiationRepository>();
+            services.AddScoped<INegotiationAttemptRepository, NegotiationAttemptRepository>();
             return services;
         }
 

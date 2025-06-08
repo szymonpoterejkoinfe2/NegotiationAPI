@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.application\\cqrs\\commands\\negotiation\\deletenegotiationcommand\\deletenegotiationcommandvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|solutionrelative:negotiationapi.application\\cqrs\\commands\\negotiation\\deletenegotiationcommand\\deletenegotiationcommandvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.infrastructure\\persistance\\repos\\negotiationattemptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|solutionrelative:negotiationapi.infrastructure\\persistance\\repos\\negotiationattemptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.application\\cqrs\\commands\\negotiation\\deletenegotiationcommand\\deletenegotiationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|solutionrelative:negotiationapi.application\\cqrs\\commands\\negotiation\\deletenegotiationcommand\\deletenegotiationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.infrastructure\\common\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|solutionrelative:negotiationapi.infrastructure\\common\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F19D5F-B255-4815-9901-46557ACD0D9A}|NegotiationAPI.Api\\NegotiationAPI.Api.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.api\\controllers\\negotiationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F19D5F-B255-4815-9901-46557ACD0D9A}|NegotiationAPI.Api\\NegotiationAPI.Api.csproj|solutionrelative:negotiationapi.api\\controllers\\negotiationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.infrastructure\\persistance\\repos\\negotiationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|solutionrelative:negotiationapi.infrastructure\\persistance\\repos\\negotiationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.application\\cqrs\\commands\\negotiation\\deletenegotiationcommand\\deletenegotiationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|solutionrelative:negotiationapi.application\\cqrs\\commands\\negotiation\\deletenegotiationcommand\\deletenegotiationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.application\\common\\interfaces\\persistance\\inegotiationattemptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|solutionrelative:negotiationapi.application\\common\\interfaces\\persistance\\inegotiationattemptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61045A4C-38B0-4074-AC35-D19200654C80}|NegotiationAPI.Contracts\\NegotiationAPI.Contracts.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.contracts\\negotiation\\getnegotiationbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61045A4C-38B0-4074-AC35-D19200654C80}|NegotiationAPI.Contracts\\NegotiationAPI.Contracts.csproj|solutionrelative:negotiationapi.contracts\\negotiation\\getnegotiationbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.application\\cqrs\\commands\\negotiation\\changenegotiationstatuscommand\\changenegotiationstatuscommandvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|solutionrelative:negotiationapi.application\\cqrs\\commands\\negotiation\\changenegotiationstatuscommand\\changenegotiationstatuscommandvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.application\\cqrs\\commands\\negotiation\\changenegotiationstatuscommand\\changenegotiationstatuscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44374A42-DC4F-4A60-8915-1E570F5A5644}|NegotiationAPI.Application\\NegotiationAPI.Application.csproj|solutionrelative:negotiationapi.application\\cqrs\\commands\\negotiation\\changenegotiationstatuscommand\\changenegotiationstatuscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.infrastructure\\persistance\\entities\\negotiationattemptentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|solutionrelative:negotiationapi.infrastructure\\persistance\\entities\\negotiationattemptentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DeleteNegotiationCommandValidation.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandValidation.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandValidation.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandValidation.cs",
-              "RelativeToolTip": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:58:04.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DeleteNegotiationCommandHandler.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandHandler.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandHandler.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandHandler.cs",
-              "RelativeToolTip": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommandHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAA1AAAAAAAAAA==",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Common\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Infrastructure\\Common\\DependencyInjection.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Common\\DependencyInjection.cs",
+              "RelativeToolTip": "NegotiationAPI.Infrastructure\\Common\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:57:57.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DeleteNegotiationCommand.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommand.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommand.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommand.cs",
-              "RelativeToolTip": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\DeleteNegotiationCommand\\DeleteNegotiationCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:43:15.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetNegotiationByIdResponse.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Contracts\\Negotiation\\GetNegotiationByIdResponse.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Contracts\\Negotiation\\GetNegotiationByIdResponse.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Contracts\\Negotiation\\GetNegotiationByIdResponse.cs",
-              "RelativeToolTip": "NegotiationAPI.Contracts\\Negotiation\\GetNegotiationByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:31:37.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChangeNegotiationStatusCommandValidation.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandValidation.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandValidation.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandValidation.cs",
-              "RelativeToolTip": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:19:49.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChangeNegotiationStatusCommandHandler.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandHandler.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandHandler.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandHandler.cs",
-              "RelativeToolTip": "NegotiationAPI.Application\\CQRS\\Commands\\Negotiation\\ChangeNegotiationStatusCommand\\ChangeNegotiationStatusCommandHandler.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T18:56:23.118Z",
+              "WhenOpened": "2025-06-08T21:04:19.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NegotiationController.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Api\\Controllers\\NegotiationController.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Api\\Controllers\\NegotiationController.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Api\\Controllers\\NegotiationController.cs",
-              "RelativeToolTip": "NegotiationAPI.Api\\Controllers\\NegotiationController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwF0AAAArAAAAAAAAAA==",
+              "Title": "NegotiationRepository.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "RelativeToolTip": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAA1wFQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T17:25:17.658Z",
+              "WhenOpened": "2025-06-08T20:19:22.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NegotiationAttemptEntity.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Entities\\NegotiationAttemptEntity.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Infrastructure\\Persistance\\Entities\\NegotiationAttemptEntity.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Entities\\NegotiationAttemptEntity.cs",
+              "RelativeToolTip": "NegotiationAPI.Infrastructure\\Persistance\\Entities\\NegotiationAttemptEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T20:18:26.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INegotiationAttemptRepository.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\Common\\Interfaces\\Persistance\\INegotiationAttemptRepository.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Application\\Common\\Interfaces\\Persistance\\INegotiationAttemptRepository.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Application\\Common\\Interfaces\\Persistance\\INegotiationAttemptRepository.cs",
+              "RelativeToolTip": "NegotiationAPI.Application\\Common\\Interfaces\\Persistance\\INegotiationAttemptRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T20:11:53.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NegotiationAttemptRepository.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationAttemptRepository.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationAttemptRepository.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationAttemptRepository.cs",
+              "RelativeToolTip": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationAttemptRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAiwF8AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T20:11:07.251Z",
               "EditorCaption": ""
             }
           ]
