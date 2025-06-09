@@ -9,7 +9,6 @@ using NegotiationAPI.Application.CQRS.Commands.Negotiation.DeleteNegotiationComm
 using NegotiationAPI.Application.CQRS.Queries.Negotiation.GetAllNegotiationsQuery;
 using NegotiationAPI.Application.CQRS.Queries.Negotiation.GetNegotiationById;
 using NegotiationAPI.Contracts.Negotiation;
-using NegotiationAPI.Contracts.Product;
 using NegotiationAPI.Domain.Entities;
 
 namespace NegotiationAPI.Api.Controllers
