@@ -10,5 +10,7 @@ namespace NegotiationAPI.Application.Common.Interfaces.Persistance
         Guid AddNegotiation(Negotiation negotiation);
         bool DeleteNegotiation(Guid negotiationId);
         Negotiation? ChangeNegotiationStatus(Guid negotiationId, NegotiationStatus status);
+        bool UpdateNegotiation(Negotiation negotiation);
+        Negotiation? GetNegotiationByAttemptId(Guid attemptId);
     }
 }

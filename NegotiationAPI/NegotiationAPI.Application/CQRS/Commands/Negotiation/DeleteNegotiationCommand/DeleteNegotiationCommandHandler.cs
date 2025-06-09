@@ -29,7 +29,7 @@ namespace NegotiationAPI.Application.CQRS.Commands.Negotiation.DeleteNegotiation
 
             if (!isDeleted)
             {
-                return Errors.Negotiation.ErrorWhileTryingToDelete;
+                return Errors.Negotiation.FailedToDelete;
             }
 
             return new ErrorOr<Success>();

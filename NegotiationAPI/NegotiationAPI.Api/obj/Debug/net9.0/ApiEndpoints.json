@@ -121,6 +121,106 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "GetAllNegotiations",
+    "RelativePath": "NegotiationAttempt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "MakeAttempt",
+    "RelativePath": "NegotiationAttempt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NegotiationAPI.Contracts.NegotiationAttempt.MakeAttemptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "GetNegotiationAttemptById",
+    "RelativePath": "NegotiationAttempt/{attemptId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "DeleteNegotiationAttempt",
+    "RelativePath": "NegotiationAttempt/{attemptId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "AcceptAttempt",
+    "RelativePath": "NegotiationAttempt/accept/{attemptId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "RejectAttempt",
+    "RelativePath": "NegotiationAttempt/reject/{attemptId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NegotiationAPI.Api.Controllers.NegotiationAttemptController",
+    "Method": "GetAllPendingNegotiations",
+    "RelativePath": "NegotiationAttempt/Waiting",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NegotiationAPI.Api.Controllers.ProductController",
     "Method": "GetAllProducts",
     "RelativePath": "Product",

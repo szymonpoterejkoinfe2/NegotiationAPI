@@ -3,11 +3,6 @@ using NegotiationAPI.Application.Common.Interfaces.Persistance;
 using NegotiationAPI.Domain.Entities;
 using NegotiationAPI.Domain.Enums;
 using NegotiationAPI.Infrastructure.Persistance.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NegotiationAPI.Infrastructure.Persistance.Repos
 {
@@ -130,6 +125,7 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
                         break;
                     case NegotiationStatus.Cancelled:
                         lastAttempt.Result = NegotiationResult.Accepted;
+                        negotiation.LastRejectedAt = DateTime.UtcNow;
                         break;
 
                     default:
@@ -141,6 +137,31 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
             _negotiationEntities[index] = negotiation;
 
             return _mapper.Map<Negotiation>(negotiation);
+        }
+
+        public bool UpdateNegotiation(Negotiation negotiation)
+        {
+            int index = _negotiationEntities.FindIndex(n => n.Id == negotiation.Id);
+            
+            if (index < 0)
+            {
+                return false;
+            }
+
+            var negotiaitonEntity = _mapper.Map<NegotiationEntity>(negotiation);
+            _negotiationEntities[index] = negotiaitonEntity;
+
+            return true;
+        }
+
+
+        public Negotiation? GetNegotiationByAttemptId(Guid attemptId)
+        {
+            var negotiationEntity = _negotiationEntities.Where(n => n.Attempts.Any(a => a.Id == attemptId)).FirstOrDefault();
+
+            var negotiation = _mapper.Map<Negotiation>(negotiationEntity);
+
+            return negotiation;
         }
 
     }

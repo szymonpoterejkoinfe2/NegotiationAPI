@@ -12,7 +12,7 @@ namespace NegotiationAPI.Domain.Entities
         public DateTime? LastRejectedAt { get; set; } = null;
 
         public bool CanProposeNewPrice() =>
-        Status == NegotiationStatus.Waiting &&
+        Status != NegotiationStatus.Cancelled &&
         Attempts.Count < 3 &&
         (LastRejectedAt == null || DateTime.UtcNow - LastRejectedAt < TimeSpan.FromDays(7));
     }

@@ -6,7 +6,7 @@ namespace NegotiationAPI.Contracts.Negotiation
     public record GetNegotiationByIdResponse (
          Guid Id,
          Guid ProductId,
-         List<NegotiationAttempt> Attempts,
+         List<Domain.Entities.NegotiationAttempt> Attempts,
          NegotiationStatus Status,
          DateTime CreatedAt,
          DateTime? LastRejectedAt
