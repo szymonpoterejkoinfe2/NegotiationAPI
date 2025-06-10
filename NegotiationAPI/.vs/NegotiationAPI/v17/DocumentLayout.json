@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8F19D5F-B255-4815-9901-46557ACD0D9A}|NegotiationAPI.Api\\NegotiationAPI.Api.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F19D5F-B255-4815-9901-46557ACD0D9A}|NegotiationAPI.Api\\NegotiationAPI.Api.csproj|solutionrelative:negotiationapi.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.infrastructure\\persistance\\repos\\negotiationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|solutionrelative:negotiationapi.infrastructure\\persistance\\repos\\negotiationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.infrastructure\\persistance\\repos\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029932AC-0EC1-407A-A55B-574BB2C3E26D}|NegotiationAPI.Infrastructure\\NegotiationAPI.Infrastructure.csproj|solutionrelative:negotiationapi.infrastructure\\persistance\\repos\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C1236F-2FCD-4FB1-8602-349782B8E0F1}|NegotiationAPI.Tests\\NegotiationAPI.Tests.csproj|h:\\negotiationapi\\negotiationapi\\negotiationapi\\negotiationapi.tests\\infrastructure\\repos\\productrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C1236F-2FCD-4FB1-8602-349782B8E0F1}|NegotiationAPI.Tests\\NegotiationAPI.Tests.csproj|solutionrelative:negotiationapi.tests\\infrastructure\\repos\\productrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Api\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "NegotiationAPI.Api\\Controllers\\ProductController.cs",
-              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Api\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "NegotiationAPI.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDsAAAAnAAAAAAAAAA==",
+              "Title": "NegotiationRepository.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "RelativeToolTip": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\NegotiationRepository.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwI8AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T06:52:54.812Z",
+              "WhenOpened": "2025-06-10T16:49:24.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductRepositoryTests.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Tests\\Infrastructure\\Repos\\ProductRepositoryTests.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Tests\\Infrastructure\\Repos\\ProductRepositoryTests.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Tests\\Infrastructure\\Repos\\ProductRepositoryTests.cs",
+              "RelativeToolTip": "NegotiationAPI.Tests\\Infrastructure\\Repos\\ProductRepositoryTests.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:29:39.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\ProductRepository.cs",
+              "ToolTip": "H:\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI\\NegotiationAPI.Infrastructure\\Persistance\\Repos\\ProductRepository.cs",
+              "RelativeToolTip": "NegotiationAPI.Infrastructure\\Persistance\\Repos\\ProductRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:28:58.697Z",
               "EditorCaption": ""
             }
           ]

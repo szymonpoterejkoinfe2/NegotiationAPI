@@ -63,7 +63,11 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
 
         public bool DeleteProduct(Product product)
         {
+            if (product == null) return false;
+
             var productToDelete = _mapper.Map<ProductEntity>(product);
+
+            if (productToDelete == null) return false;
 
             int index = _productEntities.FindIndex(p => p.Id == productToDelete.Id);
 
@@ -73,9 +77,9 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
             }
 
             _productEntities.RemoveAt(index);
-        
             return true;
         }
+
 
         public IEnumerable<Product> GetAllProducts()
         {
@@ -83,12 +87,12 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
 
             return products ?? Enumerable.Empty<Product>();
         }
-
         public Product? GetProductById(Guid productId)
         {
-            var product = _productEntities.Where(p => p.Id == productId).FirstOrDefault();
-
-            return _mapper.Map<Product>(product);
+            var productEntity = _productEntities.FirstOrDefault(p => p.Id == productId);
+            if (productEntity == null) return null;
+            return _mapper.Map<Product>(productEntity);
         }
+
     }
 }
