@@ -38,6 +38,7 @@ NegotiationAPI allows customers (unauthenticated users) to propose their own pri
 - **Authentication for employees** (JWT).
 - **Request validation** (FluentValidation).
 - **SignalR** for real-time communication and updates.
+- **Unit Tests** for repository classes with MSTest
 
 ## API Features
 
