@@ -5,6 +5,7 @@ using NegotiationAPI.Api.Common;
 using NegotiationAPI.Api.Hubs;
 using NegotiationAPI.Application.Common;
 using NegotiationAPI.Infrastructure.Common;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,12 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers()
 .AddJsonOptions(options =>
 {
-    //options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 });
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "NegotiationAPI", Version = "v1" });
-    //options.UseInlineDefinitionsForEnums();
+    options.UseInlineDefinitionsForEnums();
 });
 
 
