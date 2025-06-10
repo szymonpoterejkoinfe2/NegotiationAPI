@@ -30,6 +30,8 @@ You can also add the secret manually to your secrets file. Example content:
     }
   }
 ```
+### Key should consist of at least 35 characters.
+
 ## Contents
 
 - [Project Overview](#project-overview)
