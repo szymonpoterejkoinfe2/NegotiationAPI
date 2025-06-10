@@ -56,3 +56,5 @@ H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\ErrorOr.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\FluentValidation.dll
 H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\Newtonsoft.Json.dll
+H:\NegotiationAPI\NegotiationAPI\NegotiationAPI\NegotiationAPI.Api\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll

@@ -1,5 +1,6 @@
 ﻿using ErrorOr;
 using MediatR;
+using NegotiationAPI.Application.Common.Interfaces.Notification;
 using NegotiationAPI.Application.Common.Interfaces.Persistance;
 using NegotiationAPI.Domain.Errors;
 using System;
@@ -14,11 +15,13 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.AcceptAtte
     {
         private readonly INegotiationAttemptRepository _negotiationAttemptRepository;
         private readonly INegotiationRepository _negotiateRepository;
+        private readonly INotificationService _notificationService;
 
-        public AcceptAttemptCommandHandler(INegotiationAttemptRepository negotiationAttemptRepository, INegotiationRepository negotiateRepository)
+        public AcceptAttemptCommandHandler(INegotiationAttemptRepository negotiationAttemptRepository, INegotiationRepository negotiateRepository, INotificationService notificationService)
         {
             _negotiationAttemptRepository = negotiationAttemptRepository;
             _negotiateRepository = negotiateRepository;
+            _notificationService = notificationService;
         }
 
         public async Task<ErrorOr<Success>> Handle(AcceptAttemptCommand command, CancellationToken cancellationToken)
@@ -34,6 +37,8 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.AcceptAtte
 
             _negotiationAttemptRepository.UpdateNegotiationAttemptResultState(attemptId, Domain.Enums.NegotiationResult.Accepted);
             _negotiateRepository.ChangeNegotiationStatus(negotiation.Id, Domain.Enums.NegotiationStatus.Accepted);
+
+            await _notificationService.NotifyClientAsync(negotiationId: negotiation.Id, Domain.Enums.NegotiationStatus.Accepted.ToString());
 
             return new ErrorOr<Success>();
         }
