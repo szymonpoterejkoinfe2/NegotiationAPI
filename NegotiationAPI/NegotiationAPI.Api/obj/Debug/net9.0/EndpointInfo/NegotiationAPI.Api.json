@@ -450,13 +450,7 @@
         "type": "object",
         "properties": {
           "negotiationStatus": {
-            "enum": [
-              "Waiting",
-              "Accepted",
-              "Rejected",
-              "Cancelled"
-            ],
-            "type": "string"
+            "$ref": "#/components/schemas/NegotiationStatus"
           }
         },
         "additionalProperties": false
@@ -488,6 +482,16 @@
           }
         },
         "additionalProperties": false
+      },
+      "NegotiationStatus": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "RegistrationRequest": {
         "type": "object",

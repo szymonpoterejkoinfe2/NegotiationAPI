@@ -22,7 +22,6 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.RejectAtte
         public async Task<ErrorOr<Success>> Handle(RejectAttemptCommand command, CancellationToken cancellationToken)
         {
             var attemptId = command.AttemptId;
-
             var attempt = _negotiationAttemptRepository.GetNegotiationAttemptById(attemptId);
 
             if (attempt is null)
@@ -38,15 +37,36 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.RejectAtte
             }
 
             _negotiationAttemptRepository.UpdateNegotiationAttemptResultState(attemptId, Domain.Enums.NegotiationResult.Rejected);
-
+            attempt.Result = Domain.Enums.NegotiationResult.Rejected;       
+            
+            
             if (!negotiation.CanProposeNewPrice())
             {
-                _negotiationRepository.ChangeNegotiationStatus(negotiation.Id, Domain.Enums.NegotiationStatus.Cancelled);
+                negotiation.Status = Domain.Enums.NegotiationStatus.Cancelled;
+                var index = negotiation.Attempts.FindIndex(a => a.Id == attempt.Id);
+                negotiation.LastRejectedAt = DateTime.UtcNow;
+
+                if (index >= 0)
+                {
+                    negotiation.Attempts[index] = attempt;
+                }
+                _negotiationRepository.UpdateNegotiation(negotiation);
 
                 await _notificationService.NotifyClientAsync(negotiation.Id, Domain.Enums.NegotiationStatus.Cancelled.ToString());
             }
             else {
                 _negotiationRepository.ChangeNegotiationStatus(negotiation.Id, Domain.Enums.NegotiationStatus.Rejected);
+
+                negotiation.Status = Domain.Enums.NegotiationStatus.Rejected;
+                var index = negotiation.Attempts.FindIndex(a => a.Id == attempt.Id);
+                negotiation.LastRejectedAt = DateTime.UtcNow;
+
+                if (index >= 0)
+                {
+                    negotiation.Attempts[index] = attempt;
+                }
+                _negotiationRepository.UpdateNegotiation(negotiation);
+
                 await _notificationService.NotifyClientAsync(negotiation.Id, Domain.Enums.NegotiationStatus.Rejected.ToString());
             }
 

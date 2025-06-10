@@ -2,8 +2,8 @@
 {
     public enum NegotiationResult
     {
-        AwaitingResponse, 
-        Accepted, 
-        Rejected
+        AwaitingResponse, //0
+        Accepted,  //1
+        Rejected //2
     }
 }

@@ -109,34 +109,15 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
 
             var negotiation = _negotiationEntities[index];
 
-            negotiation.Status = status;
-
-            var lastAttempt = negotiation.Attempts.LastOrDefault();
-            if (lastAttempt != null)
+            if (status == NegotiationStatus.Rejected) 
             {
-                switch (status)
-                {
-                    case NegotiationStatus.Accepted:
-                        lastAttempt.Result = NegotiationResult.Accepted;
-                        break;
-                    case NegotiationStatus.Rejected:
-                        lastAttempt.Result = NegotiationResult.Rejected;
-                        negotiation.LastRejectedAt = DateTime.UtcNow;
-                        break;
-                    case NegotiationStatus.Cancelled:
-                        lastAttempt.Result = NegotiationResult.Accepted;
-                        negotiation.LastRejectedAt = DateTime.UtcNow;
-                        break;
-
-                    default:
-                        lastAttempt.Result = NegotiationResult.AwaitingResponse; 
-                        break;
-                }
+                negotiation.LastRejectedAt = DateTime.UtcNow;
             }
 
+            negotiation.Status = status;
             _negotiationEntities[index] = negotiation;
 
-            return _mapper.Map<Negotiation>(negotiation);
+            return _mapper.Map<Negotiation>(_negotiationEntities[index]);
         }
 
         public bool UpdateNegotiation(Negotiation negotiation)

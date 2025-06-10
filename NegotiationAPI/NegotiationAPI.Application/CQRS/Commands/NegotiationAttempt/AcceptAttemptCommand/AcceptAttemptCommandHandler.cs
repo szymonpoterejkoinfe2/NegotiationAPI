@@ -35,8 +35,21 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.AcceptAtte
                 return Errors.Negotiation.NoNegotiationWithGivenId;
             }
 
-            _negotiationAttemptRepository.UpdateNegotiationAttemptResultState(attemptId, Domain.Enums.NegotiationResult.Accepted);
-            _negotiateRepository.ChangeNegotiationStatus(negotiation.Id, Domain.Enums.NegotiationStatus.Accepted);
+            var updatedAttempt = _negotiationAttemptRepository.UpdateNegotiationAttemptResultState(attemptId, Domain.Enums.NegotiationResult.Accepted);
+            
+            var updatedNegotiation = _negotiateRepository.ChangeNegotiationStatus(negotiation.Id, Domain.Enums.NegotiationStatus.Accepted);
+
+            //Mimics updates of related entities in db
+            if (updatedAttempt is not null && updatedNegotiation is not null)
+            {
+                int id =  updatedNegotiation.Attempts.FindIndex(a => a.Id == updatedAttempt.Id);
+                if (id >= 0)
+                {
+                    updatedNegotiation.Attempts[id] = updatedAttempt;
+
+                    _negotiateRepository.UpdateNegotiation(updatedNegotiation);
+                }
+            }
 
             await _notificationService.NotifyClientAsync(negotiationId: negotiation.Id, Domain.Enums.NegotiationStatus.Accepted.ToString());
 

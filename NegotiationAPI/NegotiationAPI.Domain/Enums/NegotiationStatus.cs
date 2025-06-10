@@ -2,9 +2,9 @@
 {
     public enum NegotiationStatus
     {
-        Waiting, 
-        Accepted, 
-        Rejected, 
-        Cancelled
+        Waiting, //0
+        Accepted, //1
+        Rejected, //2
+        Cancelled //3
     }
 }
