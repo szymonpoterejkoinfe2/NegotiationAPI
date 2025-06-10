@@ -2,6 +2,23 @@
 
 A web application implementing a product price negotiation process for an online store.
 
+## Contents
+
+- [Project Overview](#project-overview)
+- [Architecture](#architecture)
+- [API Features](#api-features)
+  - [Authentication](#authentication)
+  - [Products](#products)
+  - [Negotiations](#negotiations)
+  - [Negotiation Attempts](#negotiation-attempts)
+- [Use Cases](#use-cases)
+  - [1. Customer Proposes a Price for a Product](#1-customer-proposes-a-price-for-a-product)
+  - [2. Employee Reviews and Responds to a Price Attempt](#2-employee-reviews-and-responds-to-a-price-attempt)
+  - [3. Employee Manages Products](#3-employee-manages-products)
+  - [4. Customer Continues Negotiation after Rejection](#4-customer-continues-negotiation-after-rejection)
+
+---
+
 ## Project Overview
 
 NegotiationAPI allows customers (unauthenticated users) to propose their own price for products, while store employees (authenticated users) can accept or reject these offers. The negotiation process is as follows:
@@ -17,9 +34,10 @@ NegotiationAPI allows customers (unauthenticated users) to propose their own pri
 - **Clean Architecture** – clear separation of concerns and layers.
 - **CQRS** (Command Query Responsibility Segregation) – separating read and write operations.
 - **Repository Pattern** – abstract data access.
-- In-memory storage (dictionary) used for simplicity, with easy future migration to a database.
-- Authentication for employees (e.g., JWT or simple token-based).
-- Request validation following best practices (e.g., FluentValidation).
+- **In-memory storage** (Lists) used for simplicity, with easy future migration to a database.
+- **Authentication for employees** (JWT).
+- **Request validation** (FluentValidation).
+- **SignalR** for real-time communication and updates.
 
 ## API Features
 
@@ -98,30 +116,31 @@ NegotiationAPI allows customers (unauthenticated users) to propose their own pri
 ### 1. Customer Proposes a Price for a Product
 
 1. Customer browses products using `GET /Product`.
-2. Customer selects a product and starts negotiation by calling `POST /Negotiation?productId={productId}`.
-3. Customer submits a price attempt using `POST /NegotiationAttempt` with negotiationId and proposedPrice.
-4. Wait for employee action (accept or reject).
+2. Customer selects a product and starts negotiation with `POST /Negotiation?productId={productId}`.
+3. Customer submits a price attempt using `POST /NegotiationAttempt` with `negotiationId` and `proposedPrice`.
+4. Employees are notified via SignalR in real time.
 
 ---
 
 ### 2. Employee Reviews and Responds to a Price Attempt
 
 1. Employee logs in via `POST /Authentication/login` to obtain JWT token.
-2. Employee fetches waiting attempts with `GET /NegotiationAttempt/Waiting`.
-3. Employee reviews attempt details `GET /NegotiationAttempt/{attemptId}`.
-4. Employee either:
-   - Accepts attempt using `PUT /NegotiationAttempt/accept/{attemptId}`, or
-   - Rejects attempt using `PUT /NegotiationAttempt/reject/{attemptId}`.
-5. If rejected, customer has 7 days and up to 2 more attempts to submit a new offer.
+2. Employee receives SignalR notification of a new price attempt.
+3. Employee fetches waiting attempts with `GET /NegotiationAttempt/Waiting`.
+4. Employee reviews attempt details via `GET /NegotiationAttempt/{attemptId}`.
+5. Employee either:
+   - Accepts using `PUT /NegotiationAttempt/accept/{attemptId}`, or
+   - Rejects using `PUT /NegotiationAttempt/reject/{attemptId}`.
+6. If rejected, customer has 7 days and up to 2 more attempts.
 
 ---
 
 ### 3. Employee Manages Products
 
 1. Employee logs in via `POST /Authentication/login`.
-2. Employee lists products `GET /Product`.
-3. Employee adds a new product using `POST /Product`.
-4. Employee deletes a product with `DELETE /Product/{productId}` if needed.
+2. Lists products using `GET /Product`.
+3. Adds new products using `POST /Product`.
+4. Deletes products with `DELETE /Product/{productId}`.
 
 ---
 
@@ -129,6 +148,7 @@ NegotiationAPI allows customers (unauthenticated users) to propose their own pri
 
 1. Customer receives rejection notification externally (not covered by API).
 2. Customer submits a new price attempt within 7 days and within 3 total attempts using `POST /NegotiationAttempt`.
-3. Process repeats until an attempt is accepted or negotiation expires.
+3. SignalR notifies employees in real time of the new attempt.
+4. Process repeats until an attempt is accepted or negotiation expires.
 
 ---
