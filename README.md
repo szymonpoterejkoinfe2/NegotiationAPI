@@ -2,6 +2,34 @@
 
 A web application implementing a product price negotiation process for an online store.
 
+---
+
+## 📌 Before You Start
+
+Before running the application, make sure you **configure user secrets** to securely store sensitive data like JWT secret keys.
+
+### ✅ Required Step: Add User Secrets
+
+This project uses **JWT authentication**, and the secret key must be stored using the [.NET user secrets](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets).
+
+1. Open a terminal in the project directory.
+2. Run the following command:
+
+   ```bash
+   dotnet user-secrets init
+3. Then set the JWT secret:
+   ```bash
+   dotnet user-secrets set "JwtSettings:Secret" "your-very-strong-secret-key-123456"
+   
+You can also add the secret manually to your secrets file. Example content:
+
+  ```json
+  {
+    "JwtSettings": {
+      "Secret": "your-very-strong-secret-key-123456"
+    }
+  }
+```
 ## Contents
 
 - [Project Overview](#project-overview)
