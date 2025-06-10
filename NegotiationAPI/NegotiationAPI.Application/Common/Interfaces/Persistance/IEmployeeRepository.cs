@@ -6,5 +6,7 @@ namespace NegotiationAPI.Application.Common.Interfaces.Persistance
     {
         public void Add(Employee employee);
         public Employee? GetEmployeeByEmail(string email);
+
+        public Employee? GetRandomEmployee();
     }
 }

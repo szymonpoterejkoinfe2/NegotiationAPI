@@ -77,6 +77,7 @@ namespace NegotiationAPI.Api.Controllers
 
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> MakeAttempt([FromBody] MakeAttemptRequest request)
         {
             var command = new MakeAttemptCommand(NegotiationId: request.NegotiationId, ProposedPrice: request.ProposedPrice);

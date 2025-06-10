@@ -23,6 +23,7 @@ namespace NegotiationAPI.Api.Controllers
             _mapper = mapper;
             _mediator = mediator;
         }
+
         [AllowAnonymous]
         [HttpGet()]
         public async Task<IActionResult> GetAllProducts()
@@ -63,7 +64,6 @@ namespace NegotiationAPI.Api.Controllers
         }
 
         [HttpDelete("{productId}")]
-        [AllowAnonymous]
         public async Task<IActionResult> DeleteProduct(Guid productId)
         {
             var command = new DeleteProductCommand(Id: productId);

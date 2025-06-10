@@ -26,7 +26,6 @@ namespace NegotiationAPI.Api.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
         public async Task<IActionResult> GetAllNegotiations()
         {
             var query = new GetAllNegotiationsQuery();
@@ -55,7 +54,6 @@ namespace NegotiationAPI.Api.Controllers
 
 
         [HttpPut("{negotiationId}/status")]
-        [AllowAnonymous]
         public async Task<IActionResult> ChangeNegotiationStatus(Guid negotiationId, [FromBody] ChangeNegotiationStateRequest request)
         {
             var command = new ChangeNegotiationStatusCommand(negotiationId, request.NegotiationStatus);

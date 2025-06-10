@@ -32,5 +32,18 @@ namespace NegotiationAPI.Infrastructure.Persistance.Repos
 
             return _mapper.Map<Employee>(empEntity);
         }
+
+        public Employee? GetRandomEmployee()
+        {
+            if (_employees.Count == 0)
+                return null;
+
+            var random = new Random();
+            var index = random.Next(_employees.Count);
+            var empEntity = _employees[index];
+
+            return _mapper.Map<Employee>(empEntity);
+        }
+
     }
 }

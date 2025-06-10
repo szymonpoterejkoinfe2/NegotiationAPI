@@ -1,5 +1,7 @@
 ﻿using Mapster;
 using MapsterMapper;
+using NegotiationAPI.Application.Common.Interfaces.Notification;
+using NegotiationAPI.Infrastructure.Services.SignalR;
 using System.Reflection;
 
 namespace NegotiationAPI.Api.Common
@@ -13,6 +15,10 @@ namespace NegotiationAPI.Api.Common
 
             services.AddSingleton(config);
             services.AddScoped<IMapper, ServiceMapper>();
+
+            services.AddSignalR();
+            services.AddScoped<INotificationService, NotificationService>();
+
 
             return services;
         }

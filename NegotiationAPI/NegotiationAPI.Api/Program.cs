@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.OpenApi.Models;
 using NegotiationAPI.Api.Common;
+using NegotiationAPI.Api.Hubs;
 using NegotiationAPI.Application.Common;
 using NegotiationAPI.Infrastructure.Common;
 using System.Text.Json.Serialization;
@@ -47,6 +48,7 @@ if (app.Environment.IsDevelopment())
     });
 }
 app.UseExceptionHandler("/error");
+app.MapHub<NotificationHub>("/notifications");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

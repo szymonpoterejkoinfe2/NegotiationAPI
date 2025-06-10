@@ -1,13 +1,8 @@
 ﻿using ErrorOr;
 using MediatR;
+using NegotiationAPI.Application.Common.Interfaces.Notification;
 using NegotiationAPI.Application.Common.Interfaces.Persistance;
-using NegotiationAPI.Domain.Entities;
 using NegotiationAPI.Domain.Errors;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.MakeAttemptCommand
 {
@@ -15,12 +10,15 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.MakeAttemp
     {
         private readonly INegotiationAttemptRepository _negotiationAttemptRepository;
         private readonly INegotiationRepository _negotiationRepository;
+        private readonly INotificationService _notificationService;
+        private readonly IEmployeeRepository _employeeRepository;
 
-
-        public MakeAttemptCommandHandler(INegotiationAttemptRepository negotiationAttemptRepository, INegotiationRepository negotiationRepository)
+        public MakeAttemptCommandHandler(INegotiationAttemptRepository negotiationAttemptRepository, INegotiationRepository negotiationRepository, INotificationService notificationService, IEmployeeRepository employeeRepository)
         {
             _negotiationAttemptRepository = negotiationAttemptRepository;
             _negotiationRepository = negotiationRepository;
+            _notificationService = notificationService;
+            _employeeRepository = employeeRepository;
         }
 
         public async Task<ErrorOr<Guid>> Handle(MakeAttemptCommand command, CancellationToken cancellationToken)
@@ -55,6 +53,9 @@ namespace NegotiationAPI.Application.CQRS.Commands.NegotiationAttempt.MakeAttemp
             {
                 return Errors.Negotiation.FailedToUpdate;
             }
+
+            await _notificationService.NotifyEmployeeAsync(_employeeRepository.GetRandomEmployee()?.Id.ToString() ?? "No employees", negotiatioId);
+
 
             return attemptID;
         }
